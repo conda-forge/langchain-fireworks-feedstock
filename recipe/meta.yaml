@@ -1,5 +1,5 @@
 {% set name = "langchain-fireworks" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_fireworks-{{ version }}.tar.gz
-  sha256: 04db3b2fd390f113e2026375d9a60fdc46e456920d4c98b3d7a6f70ce16bf7ed
+  sha256: de93807bd5984a791ee4a22aa98067f655c17ec62d3a86a7e30a1f219da239ae
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0
-    - langchain-core >=1.1.0,<2.0.0
+    - langchain-core >=1.2.21,<2.0.0
     - fireworks-ai >=0.13.0,<1.0.0
     - openai >=2.0.0,<3.0.0
     - requests >=2.0.0,<3.0.0
